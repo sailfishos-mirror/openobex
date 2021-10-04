@@ -62,8 +62,8 @@ int main (int argc, char **argv)
 	unsigned long vendor;
 	unsigned long product;
 
-	if (argc < 2)
-		return 0;
+	if (argc < 3)
+		return EXIT_FAILURE;
 
 	vendor = strtoul(argv[1], NULL, 16);
 	product = strtoul(argv[2], NULL, 16);
