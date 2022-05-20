@@ -4,6 +4,8 @@ include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/lib )
 add_subdirectory ( obex_test )
 add_subdirectory ( ircp )
 
+add_definitions ( -D_POSIX_C_SOURCE=200112L -D_BSD_SOURCE)
+
 set ( OPENOBEX_COMMON_APPS
   irxfer
   irobex_palm3
